@@ -66,6 +66,38 @@
             font-size: 12px;
             color: #555;
         }
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card-custom {
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .equipment-img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+        .label {
+        font-size: 12px; /* Ukuran lebih kecil */
+        color: gray; /* Warna abu-abu */
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        }
+
+        .value {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 2px solid black; /* Garis bawah bold panjang */
+        display: block;
+        width: 100%;
+        }
     </style>
 
 </head>
@@ -116,30 +148,68 @@
             </div>
         </div>
  
-        
-        <!-- Daftar Alat -->
-        <div class="row p-3">
-            <div class="col-12 alat-card d-flex align-items-center">
-                <div class="alat-img">
-                    <img src="img/cam1.png" alt="Canon EOS 4000D" class="img-fluid rounded">
-                </div>
-                <div class="alat-desc">
-                    <p class="alat-title">Deskripsi Alat</p>
-                    <p class="alat-text">Canon EOS 4000D adalah kamera DSLR entry level...</p>
-                    <strong>CANON EOS 4000D</strong>
-                </div>
-            </div>
-            <div class="col-12 alat-card d-flex align-items-center">
-                <div class="alat-img">
-                    <img src="img/lighting4.png" alt="Tripod LED 204" class="img-fluid rounded">
-                </div>
-                <div class="alat-desc">
-                    <p class="alat-title">Deskripsi Alat</p>
-                    <p class="alat-text">Tripod LED 204 adalah solusi lengkap untuk kebutuhan studio...</p>
-                    <strong>Tripod LED 204</strong>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+         <!-- Garis Pemisah -->
+         <div class="separator"></div>
+
+         <!-- Daftar Alat -->
+         <div class="row p-3">
+             <!-- Alat 1 -->
+             <div class="col-12 alat-card mb-4 p-3"
+                 style="background-color: #ECECEC; border-radius: 10px;">
+                 <div class="row align-items-center">
+                     <div class="col-4 text-center">
+                         <img src="img/cam1.png"
+                             alt="Kamera Canon EOS 4000D" class="alat-img">
+                         <h6 class="alat-nama mt-2 text-center"
+                             style="font-weight: bold;">CANON EOS 4000D</h6>
+                     </div>
+                     <div class="col-8">
+                         <h5 class="alat-title"
+                             style="font-weight: bold;">Deskripsi Alat</h5>
+                         <p class="alat-text" style="text-align: justify;">
+                             Canon EOS 4000D adalah kamera DSLR entry-level
+                             yang dirancang untuk fotografer pemula yang
+                             ingin menjelajahi dunia fotografi dengan lebih
+                             serius. Kamera ini memiliki sensor APS-C 18
+                             megapiksel, prosesor gambar DIGIC 4+, dan
+                             kemampuan merekam video Full HD, menjadikannya
+                             pilihan yang andal untuk menangkap gambar
+                             berkualitas tinggi. Dengan sistem autofokus 9
+                             titik dan konektivitas Wi-Fi built-in, pengguna
+                             dapat dengan mudah membidik subjek secara akurat
+                             dan membagikan hasilnya langsung ke perangkat
+                             lain.
+                         </p>
+                     </div>
+                 </div>
+             </div>
+
+             <!-- Alat 2 -->
+             <div class="col-12 alat-card mb-4 p-3" style="background-color: #ECECEC; border-radius: 10px;">
+                 <div class="row align-items-center">
+                     <div class="col-4 text-center">
+                         <img src="img/lighting4.png" alt="Tripod LED 204" class="alat-img">
+                         <h6 class="alat-nama mt-2 text-center" style="font-weight: bold;">Tripod LED 204</h6>
+                     </div>
+                     <div class="col-8">
+                         <h5 class="alat-title" style="font-weight: bold;">Deskripsi Alat</h5>
+                         <p class="alat-text" style="text-align: justify;">
+                             Tripod LED 204 memberikan stabilitas optimal untuk fotografi dan videografi, dengan tinggi yang dapat disesuaikan dan lampu LED bawaan. 
+                             Tripod LED 204 memberikan stabilitas optimal untuk fotografi dan videografi, dengan tinggi yang dapat disesuaikan dan lampu LED bawaan.
+                             Tripod LED 204 memberikan stabilitas optimal untuk fotografi dan videografi, dengan tinggi yang dapat disesuaikan dan lampu LED bawaan.
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <style>
+                 .alat-nama {
+                     display: block;
+                     text-align: center;
+                     font-weight: bold;
+                 }
+             </style>
+         </div>
+     </div>
+ </div>
+ </body>
 </html>
